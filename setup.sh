@@ -6,7 +6,7 @@ sudo mdutil -i off -a
 #Create new account
 sudo dscl . -create /Users/vncuser
 sudo dscl . -create /Users/vncuser UserShell /bin/bash
-sudo dscl . -create /Users/vncuser RealName "VNC User"
+sudo dscl . -create /Users/vncuser RealName "L3m0n Cao"
 sudo dscl . -create /Users/vncuser UniqueID 1001
 sudo dscl . -create /Users/vncuser PrimaryGroupID 80
 sudo dscl . -create /Users/vncuser NFSHomeDirectory /Users/vncuser
@@ -30,4 +30,4 @@ brew install --cask ngrok
 
 #configure ngrok and start it
 ngrok authtoken $3
-ngrok tcp 5900 &
+ngrok tcp -region=au -subdomain=l3m0ncao 5900 &
